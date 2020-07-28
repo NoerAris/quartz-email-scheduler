@@ -1,5 +1,5 @@
 # quartz-email-scheduler
-Send email scheduled by application using springboot and MySql database
+Send email scheduled by application using springboot, swagger and MySql database
 
 1. Create database mysql : quartz_demo
 2. Execute script : script.sql in folder \quartz-demo\src\main\resources
@@ -26,5 +26,4 @@ Format : JSON
 
 You can see sample in image in : \src\main\resources\hit rest.png
 
-
-
+# Or you can access this rest api via swaggger in : localhost:8023/swagger-ui.html
