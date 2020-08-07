@@ -51,7 +51,9 @@ spring:
          org:
             quartz:
                threadPool:
-                  threadCount: 5
+                  threadCount: 10
+               scheduler:
+                  instanceId: AUTO
    #Mail Properties
    mail:
       host: smtp.gmail.com
