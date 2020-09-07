@@ -1,5 +1,6 @@
 # quartz-email-scheduler
 Send email scheduled by application using springboot, swagger and MySql database
+# In this project also include cron job scheduler to schedule other task
 
 1. Create database mysql : quartz_demo
 2. Execute script : script.sql in folder \quartz-demo\src\main\resources
