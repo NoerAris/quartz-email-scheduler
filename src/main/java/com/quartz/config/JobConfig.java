@@ -52,4 +52,9 @@ public class JobConfig {
 			.withSchedule(CronScheduleBuilder.cronSchedule("0/5 * * ? * * *").withMisfireHandlingInstructionIgnoreMisfires())
 			.build();
 	}
+	/* withMisfireHandlingInstructionIgnoreMisfires() => Instructs the Scheduler that the Trigger will never be evaluated for a misfire situation, and that the scheduler will simply try to fire it as soon as it can,
+	and then update the Trigger as if it had fired at the proper time.
+	NOTE: if a trigger uses this instruction, and it has missed several of its scheduled firings, then several rapid firings may occur
+	as the trigger attempt to catch back up to where it would have been. For example,
+	a SimpleTrigger that fires every 15 seconds which has misfired for 5 minutes will fire 20 times once it gets the chance to fire.*/
 }
